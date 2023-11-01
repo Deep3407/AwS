@@ -1,0 +1,25 @@
+Ec2 Os Family types Available 
+
+
+Need to pass a Script while Ec2 server is booting 
+
+
+IAM How can we map permission between ec2 with other aws services
+
+
+s3 how to transfer a object between the storage classes for every 30 days
+
+Ec2 if the key pair lost how to recover the server
+
+how to login into ec2 wihtout using key pair
+
+how will the server get monitored  what is the default monitoring tool
+
+Labmda fuction used to do serveless automation what is the function name
+
+
+When can we use SNS and when can we use SQS give a real time example for each
+
+Different migration services available and how to migrate a server
+
+in cloud front a user is still getting the old data how to make sure the user will always get the updated data from origin
