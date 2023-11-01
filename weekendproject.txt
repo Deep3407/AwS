@@ -1,0 +1,112 @@
+TCS -> Service Based Company
+
+Team:
+ Manager + Cloud Engg + Developer + Tester
+
+Client/project: Mithran's Food Shop
+
+===================
+
+Company: XYZ Company
+Total IT EXP: 3-5 yrs
+Relavant Exp: 3+ yrs of AWS & DEVOPS + Junior Intern
+Project 1: Chewy (2 yrs) - Monolithic Architecture
+Project 2: Huma  (1 yr) - MircroService Architecture 
+
+===================
+
+WebSite - Web Application
+
+Monolithic Architecture
+
+Static Web Application
+Dynamic Web Application
+
+1 tier Architecture: webserver (apache httpd)
+2 tier Architecture: webserver (apache httpd) + DataBase (MYSQL)
+3 tier Architecture: webserver (apache httpd) + AppServer (Tomcat) + DataBase (MYSQL)
+
+===================
+
+3 tier Monolithic Architecture (Warm Standby) 
+
+Environment: Dev , QA , UAT , PROD , DR 
+              6     6    4     60
+
+Non Prod: 12-20 Servers (t3.large)
+Prod: 40+ Servers (c4.2xlarge)
+
+https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/
+
+===================
+
+6hrs once Backup of my DB
+
+12pm Backup
+6pm backup
+12am Backup 
+
+4hrs of DATALOSS (RPO)
+
+4am Disaster
+
+1.5 hrs of DOWNTIME (RTO)
+
+5.30am 
+
+6am Backup
+
+===================
+
+Agenda:
+
+3 tier Monolithic Architecture (with Warm Standby DR) 
+
+FrontEnd -> Apache Httpd
+BackEnd -> WordPress (PHP)
+DB -> MYSQL
+
+===================
+
+Pre-Requisite
+1. Domain Name
+   1.1 GoDaddy
+   1.2. Hostinger
+2. AWS Account
+
+prod -> http://cloudgreens.in
+proddb
+prodadm
+prodadm123
+proddb.c2hwzbytf6ik.ap-south-1.rds.amazonaws.com:3306
+
+dr -> http://dr.cloudgreens.in
+drdb
+dradm
+dradm123
+drdb.c2hwzbytf6ik.ap-south-1.rds.amazonaws.com:3306
+
+===================
+
+
+Godaddy <-> R53 <-> LB <-> EC2 <-> RDS (MYSQL)
+                          (IAM)
+
+ACM
+
+
+===================
+
+Mithran 91500 87745
+
+TASK: Learn about aws DR Strategies
+https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/
+TASK: Create Prod & Dr in different Regions
+TASK: Draw Architecture Diagram in cloudcraft
+TASK: Impletement Failover for Prod & DR through R53
+
+TASK: Include VPC Components in your AWS Project, keep your RDS private
+TASK: Create Three Seprate Security Groups for LB, EC2, RDS
+
+
+===================
